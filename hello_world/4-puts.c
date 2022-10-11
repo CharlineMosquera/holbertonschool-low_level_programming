@@ -1,5 +1,5 @@
 #include<stdio.h>
-/*
+/**
 *Funcion principal
 *Llama a la funcion puts
 *para imprimir una frase
