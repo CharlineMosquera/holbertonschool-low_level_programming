@@ -1,10 +1,11 @@
 #include<stdio.h>
 /**
- *Descipcion funcion main
- *
+ *main - print text
+ *Return: 0
  */
-int main(void)/**Descripcion funcion main*/
+
+int main(void)
 {
-putchar("and that piece of art is useful\" - Dora Korpar, 2015-10-19")
-return (1);
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
