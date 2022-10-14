@@ -3,18 +3,16 @@
  * print_alphabet - print text
  * Return: 0
  */
-int main(void)
+void print_alphabet(void)
 {
-	int i;
+	char i;
 
 	for (i = 'a'; i <= 'z'; i++)
 
 	{
-		putchar(i);
-	}
-	{
-		putchar('\n');
+		_putchar(i);
 	}
 
-	return (0);
+	_putchar('\n');
+
 }
