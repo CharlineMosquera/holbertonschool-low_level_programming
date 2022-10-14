@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - print text
+ * print_alphabet - print text
  * Return: 0
  */
 int main(void)
