@@ -8,8 +8,10 @@
 
 void print_number(int n)
 {
-	if (n % 1 == 0)
+	unsigned int num = n;
+
+	if (num % 1 == 0)
 	{
-		_putchar(n);
+		_putchar(num);
 	}
 }
