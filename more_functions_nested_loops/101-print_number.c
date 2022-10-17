@@ -8,6 +8,5 @@
 
 void print_number(int n)
 {
-	n = 0;
 	_putchar(n);
 }
