@@ -18,6 +18,6 @@ void rev_string(char *s)
 
 	for (c = r; s[c] != '\0'; c--)
 	{
-		_putchar(s[r]);
+		_putchar(s[c]);
 	}
 }
