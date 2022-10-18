@@ -10,7 +10,7 @@ void rev_string(char *s)
 {
 	int c = 0, r = 0, cont = 0;
 
-	for (r = 0; r >= s; r--)
+	for (r = 0; s[r] != '\0'; r++)
 	{
 		cont++;
 		_putchar(s[r]);
