@@ -8,20 +8,20 @@
 
 char *leet(char *s)
 {
-	int i;
+	int i, x;
+
+	char *l = "aAeEoOtTlL";
+	char *r = "4433007711";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] == 'a' || 'A')
-			s[i] = 4;
-		else if (s[i] == 'e' || 'E')
-			s[i] = 3;
-		else if (s[i] == 'o' || 'O')
-			s[i] = 0;
-		else if (s[i] == 't' || 'T')
-			s[i] = 7;
-		else if (s[i] == 'l' || 'L')
-			s[i] = 1;
+		for  (x = 0; x < 10; x++)
+		{
+			if (s[i] == l[x])
+			{
+				s[i] = r[x];
+			}
+		}
 	}
 	return (s);
 }
