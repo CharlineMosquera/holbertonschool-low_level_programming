@@ -1,32 +1,30 @@
 #include "main.h"
 
 /**
- * root - returns the root of a number
+ * _root - returns the root of a number
  * @n: number
  * @r: root
- * Return: -1 or r
+ * Return: natural square root
  */
 
-int root(int n, int r)
+int _root(int n, int r)
 {
 	if (r * r > n)
 		return (-1);
-	if (n < r * r)
-	       	return (-1);
-	return (r);
+
+	if (r * r == n)
+		return (r);
+
+	return (_root(n, r + 1));
 }
 
 /**
  * _sqrt_recursion - returns the natural square root of a number
  * @n: number
- * Return: -1 or root
+ * Return: call funtion _root
  */
 
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-	{
-		return (-1);
-	}
-	return (root(n, 0));
+	return (_root(n, 1));
 }
