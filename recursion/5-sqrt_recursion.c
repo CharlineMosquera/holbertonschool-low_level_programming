@@ -10,14 +10,10 @@
 int root(int n, int r)
 {
 	if (r * r > n)
-	{
 		return (-1);
-		if (n < r * r)
-		{
-			return (-1);
-		}
-	       return (r);
-	}
+	if (n < r * r)
+	       	return (-1);
+	return (r);
 }
 
 /**
