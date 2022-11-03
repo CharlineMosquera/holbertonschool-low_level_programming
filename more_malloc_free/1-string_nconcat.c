@@ -1,6 +1,21 @@
 #include "main.h"
 
 /**
+ * _strlen_recursion - function that returns the length of a string
+ * @s: string
+ * Return: len of a string or 0.
+ */
+
+int _strlen_recursion(char *s)
+{
+	if (*s == '\0')
+	{
+		return (0);
+	}
+	return (1 + _strlen_recursion(s + 1));
+}
+
+/**
  * string_nconcat - function that concatenates two strings
  * @s1: string
  * @s2: string
@@ -11,30 +26,34 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr = NULL;
-	unsigned int len1, len2, i = 0;
+	unsigned int len1 = 0, len2 = 0, i = 0;
 
 	if (s1 == NULL)
 		s1 = "";
-	for (len1 = 0; s1[len1] != '\0'; len1++)
-		;
+	len1 = _strlen_recursion(s1);
 
 	if (s2 == NULL)
 		s2 = "";
-	for (len2 = 0; s2[len2] != '\0'; len2++)
-		;
+	len2 = _strlen_recursion(s2);
 
-	if (n >= len2)
-		ptr = malloc(sizeof(char) * (len1 + len2 + 1));
-	ptr = malloc(sizeof(char) * (len1 + n + 1));
+	if (len2 >= n)
+		ptr = malloc(sizeof(char) * (len1 + n + 1));
+	ptr = malloc(sizeof(char) * (len1 + len2 + 1));
 
 	if (ptr == NULL)
 		return (NULL);
 
-	for (; i < len1; i++)
+	while (i < len1)
+	{
 		ptr[i] = s1[i];
+		i++;
+	}
 
-	for (; i < len1 + len2; i++)
+	while (i < len1 + len2)
+	{
 		ptr[i] = s2[i - len1];
+		i++;
+	}
 
 	ptr[i] = '\0';
 	return (ptr);
