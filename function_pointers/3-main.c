@@ -1,5 +1,11 @@
 #include "3-calc.h"
 
+/**
+ * main - function that prints the result of the entered operation
+ * @argc: The number of command line arguments
+ * @argv: An array containing the program command line arguments
+ * Return: 0
+ */
 int main(int argc, char *argv[])
 {
 	int a, b, d;
