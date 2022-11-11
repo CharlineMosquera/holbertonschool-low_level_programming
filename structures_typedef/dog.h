@@ -22,6 +22,10 @@ struct dog
  */
 typedef struct dog dog_t;
 
+/*libraries*/
+#include <stdio.h>
+#include <stdlib.h>
+
 /*Prototype*/
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
