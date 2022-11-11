@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, b, d;
+	int a, b, result;
 	int (*ptr)(int, int);
 
 	a = atoi(argv[1]);
@@ -17,17 +17,24 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
+	}
+
+	ptr = get_op_func(argv[2]);
+	if (ptr == NULL)
+	{
+		printf("Error\n");
+		exit(99);
 	}
 
 	if (argv[2][1] != '\0')
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 
-	ptr = get_op_func(argv[2]);
-        d = (ptr)(a, b);
-	printf("%d\n", d);
+	result = (ptr)(a, b);
+
+	printf("%d\n", result);
 	return (0);
 }
