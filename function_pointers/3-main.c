@@ -3,12 +3,10 @@
 int main(int argc, char *argv[])
 {
 	int a, b, d;
-	int (*c)(int, int);
-	char *op;
+	int (*ptr)(int, int);
 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-	op = argv[2];
 
 	if (argc != 4)
 	{
@@ -16,20 +14,14 @@ int main(int argc, char *argv[])
 		exit (98);
 	}
 
-	if (*op != '+' && *op != '-' && *op != '/' && *op != '*' && *op != '%')
+	if (argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit (99);
 	}
 
-	if ((*op == '/' && b == 0) || (*op == '%' && b == 0))
-	{
-		printf("Error\n");
-		exit (100);
-	}
-
-	c = get_op_func(op);
-        d = (*c)(a, b);
+	ptr = get_op_func(argv[2]);
+        d = (ptr)(a, b);
 	printf("%d\n", d);
 	return (0);
 }
