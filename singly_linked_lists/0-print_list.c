@@ -21,5 +21,6 @@ size_t print_list(const list_t *h)
 		count_nodos++;
 		h = h->next;
 	}
+
 	return (count_nodos);
 }
