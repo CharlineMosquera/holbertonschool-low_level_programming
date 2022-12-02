@@ -19,7 +19,7 @@ int _strlen(const char *s)
 
 /**
  * add_node_end - function that adds a new node at the end of a list_t list.
- * @head: nodo
+ * @head: pointer to nodo
  * @str: str
  * Return: new nodo or NULL if failed
  */
