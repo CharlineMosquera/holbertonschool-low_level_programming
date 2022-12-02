@@ -11,7 +11,7 @@ size_t print_list(const list_t *h)
 	size_t count_nodos = 0;
 
 	if (!h)
-		return count_nodos;
+		return (count_nodos);
 	while (h)
 	{
 		if (h->str == NULL)
