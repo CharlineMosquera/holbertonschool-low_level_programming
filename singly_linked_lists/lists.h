@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef LIST_H
+#define LIST_H
 
 /**
  * struct list_s - singly linked list
@@ -29,4 +29,4 @@ list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 int _strlen(const char *s);
 
-#endif /*MAIN_H*/
+#endif /*LIST_H*/
