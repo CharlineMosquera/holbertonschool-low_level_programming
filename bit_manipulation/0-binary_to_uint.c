@@ -19,10 +19,11 @@ int _strlen(const char *s)
 }
 
 /**
- * binary_to_uint -
+ * binary_to_uint - function that converts a binary number to an unsigned int
  * @b: binary number
  * Return: unsigned int or 0
  */
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num = 0;
