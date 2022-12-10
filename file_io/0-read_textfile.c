@@ -26,5 +26,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fildes == -1 || letters_out == -1) /*the file could not be opened or read*/
 		return (0);
 
+	close(fildes);
 	return (letters_out);
 }
