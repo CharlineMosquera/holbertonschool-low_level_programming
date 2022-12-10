@@ -24,7 +24,7 @@ int _strlen(const char *s)
  */
 int create_file(const char *filename, char *text_content)
 {
-	int len = _strlen(text_content), fildes;
+	int fildes;
 
 	if (filename == NULL)
 		return (-1);
@@ -34,7 +34,7 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 
 	if (text_content)
-		write(fildes, text_content, len);
+		write(fildes, text_content, _strlen(text_content));
 
 	close(fildes);
 	return (1);
