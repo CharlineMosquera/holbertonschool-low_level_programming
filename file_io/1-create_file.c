@@ -32,8 +32,10 @@ int create_file(const char *filename, char *text_content)
 	fildes = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	if (fildes == -1)
 		return (-1);
-	write(fildes, text_content, len);
-	close(fildes);
 
+	if (text_content)
+		write(fildes, text_content, len);
+
+	close(fildes);
 	return (1);
 }
