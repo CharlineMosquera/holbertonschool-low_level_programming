@@ -23,8 +23,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	fildes = open(filename, O_RDONLY);
 	letters_out = read(fildes, buff, letters);
-	if (fildes == -1 || letters_out == -1) /*the file could not be opened or read*/
+	if (fildes == -1 || letters_out == -1) /*file could not be opened or read*/
 		return (0);
+
+	write(STDOUT_FILENO, buff, letters_out);
 
 	close(fildes);
 	return (letters_out);
