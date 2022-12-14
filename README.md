@@ -1,6 +1,7 @@
 <div align="center">
     <h1>Low-Level Programming </h1>
 </div>
+![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/212/cisfun.jpg)
 
 This repository contains the development of 
 different low-level programming projects carried 
