@@ -30,7 +30,7 @@ out during my time as a student at Holberton School.
 * [C - More singly linked lists](./more_singly_linked_lists)
 * [C - Bit manipulation](./bit_manipulation)
 * [C - File I/O](./file_io)
-* [C - Doubly linked lists](./doubly_linked_lists)
+* [C - Doubly linked lists](./doubly_linked_list)
 * [C - Hash tables](./hash_tables)
 * [C - Simple Shell]
 
