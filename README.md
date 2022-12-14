@@ -40,6 +40,6 @@ out during my time as a student at Holberton School.
 
 <p align="center">
   <img
-    src="https://uploads-ssl.webflow.com/6105315644a26f77912a1ada/610540e8b4cd6969794fe673_Holberton_School_logo-04-04.svg"
+    src="https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/79001/331125_630361.png"
     alt="Holberton School logo">
 </p>
