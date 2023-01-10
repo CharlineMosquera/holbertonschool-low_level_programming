@@ -58,7 +58,7 @@ void print_array(const int *array, size_t size, size_t pr)
 		if (array[pr] < array[size - 1])
 			printf(", ");
 		++pr;
-		
+
 	}
 	printf("\n");
 }
