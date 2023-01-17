@@ -2,8 +2,6 @@
     <h1>Low-Level Programming </h1>
 </div>
 
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/212/cisfun.jpg)
-
 This repository contains the development of 
 different low-level programming projects carried 
 out during my time as a student at Holberton School.
@@ -36,7 +34,7 @@ out during my time as a student at Holberton School.
 
 ## Author :black_nib:
 
-* __Charline S Mosquera__ <[CharCoder](https://github.com/CharCoder)>
+* __Charline S Mosquera__ <[CharlineMosquera](https://github.com/CharlineMosquera)>
 
 <p align="center">
   <img
